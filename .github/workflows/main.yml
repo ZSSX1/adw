@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "N971N,N976N" ]
+        model: [ "N970F,N975F" ]
 
     steps:
       - uses: actions/checkout@v3
@@ -56,7 +56,7 @@ jobs:
           ./cruelbuild config                    \
                        os_patch_level=2023-08    \
                        model=${{ matrix.model }} \
-                       name="Star7-kernel-HWD2-2.0"  \
+                       name="X"  \
                        toolchain=$TOOLCHAIN      \
                        +magisk=alpha            \
                        +nohardening               \
